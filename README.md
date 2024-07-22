@@ -18,7 +18,7 @@ This is the front-end for our blog webapp, built using React.js.
 
 2. Navigate to the project directory:
    ```
-   cd blog
+   cd dm-blog
    ```
 
 3. Install dependencies:
