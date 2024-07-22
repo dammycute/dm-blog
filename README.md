@@ -76,12 +76,13 @@ The application uses React Router for navigation. Here are the main routes:
 src/
   components/
     auth/
-      login.js
-      register.js
+      login.jsx
+      register.jsx
     blog/
-      blog.js
-      blogdetail.js
-      create-blog.js
+      404.jsx
+      blog.jsx
+      blogdetail.jsx
+      create-blog.jsx
     home/
       homepage.js
   App.js
@@ -93,7 +94,8 @@ App.css
 
 - React
 - React Router DOM
-- [List any other major dependencies]
+- DomPurify
+- Draftjs
 
 ## State Management
 
