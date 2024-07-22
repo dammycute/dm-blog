@@ -13,7 +13,7 @@ This is the front-end for our blog webapp, built using React.js.
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/blog-webapp-frontend.git
+   git clone https://github.com/dammycute/dm-blog.git
    ```
 
 2. Navigate to the project directory:
@@ -37,7 +37,7 @@ This is the front-end for our blog webapp, built using React.js.
 To start the development server:
 
 ```
-npm start
+npm run dev
 ```
 
 The app will be available at `http://localhost:5173`.
