@@ -1,11 +1,12 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import author from "../../assets/author.png"
 import Navbar from '../home/navbar'
 import DOMPurify from 'dompurify'
 import Footer from '../home/footer'
-import blog1 from '../../assets/blog1.png'
+// import blog1 from '../../assets/blog1.png'
 import axios from 'axios'
 import { useParams } from 'react-router-dom'
+import API_URL from '../../config'
 
 const BlogDetail = () => {
     const { postId } = useParams()
@@ -14,7 +15,7 @@ const BlogDetail = () => {
 
     useEffect(() => {
         const fetchPost = async () => {
-            const response = await axios.get(`http://127.0.0.1:8000/blog/list/${postId}`)
+            const response = await axios.get(`${API_URL.BaseUrl}/blog/list/${postId}`)
             console.log(response)
             setPost(response.data)
         }

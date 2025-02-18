@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import { category } from '../home/footer';
@@ -6,6 +6,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import FourOFour from './404';
 import Navbar from '../home/navbar';
+import API_URL from '../../config';
 
 const CreateBlogPost = () => {
     const token = localStorage.getItem('token');
@@ -87,7 +88,7 @@ const CreateBlogPost = () => {
 
 
             try {
-                const response = await axios.post('http://127.0.0.1:8000/blog/', formDataToSubmit, {
+                const response = await axios.post(`${API_URL.BaseUrl}/blog/`, formDataToSubmit, {
                     headers: {
                         'Content-Type': 'multipart/form-data',
                         'Authorization': `Bearer ${token}`,

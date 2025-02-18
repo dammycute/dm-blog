@@ -1,28 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-export const navlist = [
-    {
-        name: 'Home',
-        navlink: '/'
-    },
-    {
-        name: 'Blog',
-        navlink: '/blogs'
-    },
-    {
-        name: 'Create Post',
-        navlink: '/add-post'
-    },
-    {
-        name: 'Register',
-        navlink: '/register'
-    },
-    {
-        name: 'Login',
-        navlink: '/login'
-    }
-]
+import { navlist } from './category'
 
 const Navbar = () => {
     const [menuActive, setMenuActive] = useState(false)

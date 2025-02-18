@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+// import { useState } from 'react'
 import hero from "../../assets/Image.png"
 import author from "../../assets/author.png"
 import Navbar from '../home/navbar'
 import BlogCard from '../home/blogCard'
 import Footer from '../home/footer'
 import FourOFour from './404'
+import API_URL from '../../config'
 
 const Blog = () => {
   const token = localStorage.getItem("token");
@@ -35,7 +36,7 @@ const Blog = () => {
             </div>
           </div>
         </div>
-        <BlogCard endpoint={'http://127.0.0.1:8000/blog'} headers={{Authorization: `Bearer ${token}`}} url=''/>
+        <BlogCard endpoint={`${API_URL.BaseUrl}/blog`} headers={{Authorization: `Bearer ${token}`}} url=''/>
         
       </div>
       <Footer/>

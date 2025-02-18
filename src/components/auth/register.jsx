@@ -1,9 +1,9 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import Navbar from '../home/navbar'
 
-
+import API_URL from '../../config';
 
 
 const Register = () => {
@@ -39,7 +39,7 @@ const Register = () => {
             if(formData.password !== confirmPassword){
                 setError('Passwords do not match!')
             }else{
-                const response = await axios.post('http://127.0.0.1:8000/users/register', formData)
+                const response = await axios.post(`${API_URL.BaseUrl}/users/register`, formData)
             console.log(response)
             if (response.status === 201) {
                 console.log(response.data)

@@ -1,9 +1,10 @@
-import React from 'react'
+// import React from 'react'
 import Navbar from './navbar'
 import hero from "../../assets/Image.png"
 import author from "../../assets/author.png"
 import BlogCard from './blogCard'
 import Footer from './footer'
+import API_URL from '../../config'
 
 const Homepage = () => {
   return (
@@ -30,7 +31,7 @@ const Homepage = () => {
           </div>
         </section>
         <div className='margin'></div>
-        <BlogCard endpoint={'http://127.0.0.1:8000/blog/list'} headers={{}} url='blogs'/>
+        <BlogCard endpoint={`${API_URL.BaseUrl}/blog/list`} headers={{}} url='blogs'/>
 
       </div>
       <Footer />

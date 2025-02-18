@@ -3,6 +3,8 @@ import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom';
 import Navbar from '../home/navbar';
 
+import API_URL from '../../config';
+
 const Login = () => {
     const navigate = useNavigate()
     const [formData, setFormData] = useState({
@@ -10,11 +12,13 @@ const Login = () => {
         password: '',
     });
 
+    
+
     const handleSubmit = async (e) => {
         e.preventDefault();
 
         try {
-            const response = await axios.post('http://127.0.0.1:8000/api/token/', formData)
+            const response = await axios.post(`${API_URL.BaseUrl}/api/token/`, formData)
                 if (response.status === 200){
                     console.log(response)
                     navigate('/add-post')
