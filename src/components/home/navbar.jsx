@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
-import { navlist } from './category'
+// import { navlist } from './category'
+import { navlist } from './navlist'
 
 const Navbar = () => {
     const [menuActive, setMenuActive] = useState(false)

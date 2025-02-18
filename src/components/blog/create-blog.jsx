@@ -157,7 +157,7 @@ const CreateBlogPost = () => {
                 </div>
             </div>
         );
-    };
+    }
 }
 
 export default CreateBlogPost;
