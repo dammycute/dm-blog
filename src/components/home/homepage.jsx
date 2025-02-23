@@ -31,7 +31,7 @@ const Homepage = () => {
           </div>
         </section>
         <div className='margin'></div>
-        <BlogCard endpoint={`${API_URL.BaseUrl}/list`} headers={{}} url='blogs'/>
+        <BlogCard endpoint={`${API_URL.BaseUrl}/blog/list`} headers={{}} url=''/>
 
       </div>
       <Footer />
