@@ -507,6 +507,9 @@ a{
     font-size: 18px;
   }
 
+  .form-ctn{
+    padding: 1rem;
+  }
 
   .form-ctn .ctn{
     display: block;
