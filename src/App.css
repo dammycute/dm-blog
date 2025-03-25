@@ -467,6 +467,11 @@ a{
 
   }
 
+  .container {
+    width: 95%;
+    margin: 0 auto;
+  }
+
   .nav{
     flex-direction: column;
     gap: 1rem;
